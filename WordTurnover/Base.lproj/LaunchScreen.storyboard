@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Turnover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Z-o3-9KN">
+                                <rect key="frame" x="27.333333333333343" y="339.66666666666669" width="359.66666666666663" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="3Jc-YQ-vh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="61"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free_horizontal_on_white_by_logaster.png" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-7D-hWi">
+                                <rect key="frame" x="134" y="589" width="146" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="hhQ-d0-3VK"/>
+                                    <constraint firstAttribute="width" constant="146" id="wqp-Tx-gln"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q2Z-o3-9KN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7HX-pB-d8h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Q2Z-o3-9KN" secondAttribute="trailing" id="Xbs-fh-VTp"/>
+                            <constraint firstItem="AEl-7D-hWi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xz2-08-Hbu"/>
+                            <constraint firstItem="AEl-7D-hWi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aUk-M8-sWL"/>
+                            <constraint firstItem="Q2Z-o3-9KN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d1b-Mw-gXy"/>
+                            <constraint firstItem="Q2Z-o3-9KN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vJX-iW-PLJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="free_horizontal_on_white_by_logaster.png" width="327" height="147"/>
+    </resources>
+</document>

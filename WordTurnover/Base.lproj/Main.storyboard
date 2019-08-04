@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z6Z-nv-Dyp">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WordTurnover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBX-ch-Xkl">
+                                <rect key="frame" x="73" y="175.66666666666666" width="265" height="30"/>
+                                <color key="backgroundColor" red="0.98938149213790894" green="0.78345328569412231" blue="0.48492610454559326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="ZIl-ut-Qle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Напишите слово" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2y6-JK-aa3">
+                                <rect key="frame" x="85.000000000000014" y="81" width="230.33333333333337" height="38.666666666666657"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="32"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="joE-Cy-QsZ">
+                                <rect key="frame" x="34.333333333333343" y="250.66666666666663" width="332" height="42"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="qng-DR-XTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-bh-wuj">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
+                                                <color key="backgroundColor" red="0.99330657720565796" green="0.78738075494766235" blue="0.4889032244682312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                                <state key="normal" title="Перевернуть">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="reversButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfQ-6i-iPw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9O-SK-Fwd">
+                                                <rect key="frame" x="196" y="0.0" width="136" height="42"/>
+                                                <color key="backgroundColor" red="0.99331659078598022" green="0.78746324777603149" blue="0.48028486967086792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                                <state key="normal" title="Перемешать">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mixUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuz-qt-adG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRF-6i-ht8">
+                                <rect key="frame" x="184.33333333333334" y="340" width="27.666666666666657" height="57"/>
+                                <color key="backgroundColor" red="0.99330657720565796" green="0.78738075494766235" blue="0.4889032244682312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="mbW-Rb-wMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36533987522125244" green="0.42006188631057739" blue="0.71875518560409546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xBX-ch-Xkl" firstAttribute="top" secondItem="2y6-JK-aa3" secondAttribute="bottom" constant="56" id="9i8-Fk-CZa"/>
+                            <constraint firstItem="2y6-JK-aa3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="OM2-oN-yb4"/>
+                            <constraint firstItem="joE-Cy-QsZ" firstAttribute="centerX" secondItem="DRF-6i-ht8" secondAttribute="centerX" constant="2" id="UAl-xT-Omc"/>
+                            <constraint firstItem="2y6-JK-aa3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="YSc-23-VXP"/>
+                            <constraint firstItem="xBX-ch-Xkl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="ihm-ce-MEc"/>
+                            <constraint firstItem="xBX-ch-Xkl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="ixq-zn-OrS"/>
+                            <constraint firstItem="2y6-JK-aa3" firstAttribute="centerX" secondItem="joE-Cy-QsZ" secondAttribute="centerX" id="liQ-7l-BAh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xBX-ch-Xkl" secondAttribute="trailing" constant="76" id="ngC-a1-OMk"/>
+                            <constraint firstItem="joE-Cy-QsZ" firstAttribute="top" secondItem="xBX-ch-Xkl" secondAttribute="bottom" constant="45" id="vCU-YP-Pig"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xBX-ch-Xkl" secondAttribute="trailing" constant="76" id="yJJ-A2-nLn"/>
+                            <constraint firstItem="DRF-6i-ht8" firstAttribute="top" secondItem="joE-Cy-QsZ" secondAttribute="bottom" constant="47.333333333333371" id="zdo-2C-R1J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="inl-Gv-PBI"/>
+                    <connections>
+                        <outlet property="TextField" destination="xBX-ch-Xkl" id="uQ8-JM-MuV"/>
+                        <outlet property="labelTextField" destination="DRF-6i-ht8" id="WRX-Bz-FIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="119.83695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TRg-FT-BAg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z6Z-nv-Dyp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ynz-lh-dTr">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hoa-Sg-UhG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aee-Ii-pmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="120"/>
+        </scene>
+    </scenes>
+</document>
